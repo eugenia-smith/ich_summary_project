@@ -1,0 +1,42 @@
+.page_header {
+  /* display: flex;
+  align-items: center; */
+  padding: 40px 0;
+  min-height: 110px;
+  width: 100vw;
+
+  background-color: #3b3c3d;
+}
+
+.main_nav {
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+  max-width: 1420px;
+}
+
+.header_title {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+
+  margin-left: auto;
+}
+
+.nav_option {
+  color: white;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.nav_option:active {
+  opacity: 1;
+}
