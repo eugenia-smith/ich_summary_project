@@ -4,6 +4,7 @@ import Main from "./components/main";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Cart from "./components/cart";
+import ContactInfo from "./components/contactInfo";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        {/* <Route path="/contacts" element={}></Route> */}
+        <Route path="/contactInfo" element={<ContactInfo />}></Route>
       </Routes>
       <Footer />
     </div>

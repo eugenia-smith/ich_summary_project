@@ -33,7 +33,8 @@
 .catalogue_list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 131px;
+  column-gap: 131px;
+  row-gap: 64px;
 
   width: 100%;
 }
