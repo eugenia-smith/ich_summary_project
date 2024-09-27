@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import mainBanner from "../../assets/images/main_banner_full.png";
 import CatalogueItem from "../catalogueItem";
 import Cart from "../cart";
+import addIcon from "../../assets/icons/add_to_cart_icon.svg";
 
 function Main() {
   // const [catalogue, setCatalogue] = useState([]);
@@ -18,6 +19,11 @@ function Main() {
   //   );
   //   setCatalogue(response.data);
   // }
+
+  const stylesData = {
+    container: {},
+    item: {},
+  };
 
   return (
     <main className={styles.main_container}>
@@ -34,7 +40,12 @@ function Main() {
               </li>
             );
           })} */}
-          <Cart url={url} icon={icon} stylesData={stylesData} />
+          <Cart
+            path="productData"
+            icon={addIcon}
+            stylesData={stylesData}
+            title="Товары"
+          />
         </ul>
       </section>
     </main>
