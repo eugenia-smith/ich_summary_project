@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-function Cart() {
+function Cart({ url, icon, stylesData, title }) {
   const [cartList, setCartList] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Cart() {
   async function getCartItems() {
     try {
       const response = await axios.get(
-        "https://66f3c87377b5e8897096cebb.mockapi.io/cartItem"
+        "https://66f3c87377b5e8897096cebb.mockapi.io/productData"
       );
 
       setCartList(response.data);
